@@ -6,5 +6,5 @@ const btnInfoElem = document.querySelector('.btnInfo');
 
 btnInfoElem.addEventListener('click', () => {
 	const messageElem = document.querySelector('.message');
-	messageElem.innerText = 'nnn';
+	messageElem.innerText = sentencize('this is a test');
 });

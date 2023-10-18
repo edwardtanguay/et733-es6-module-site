@@ -1,8 +1,8 @@
-import * as tools from './tools.js';
+import { sentencize, replaceAll } from './tools.js';
 
 const btnInfoElem = document.querySelector('.btnInfo');
 
 btnInfoElem.addEventListener('click', () => {
 	const messageElem = document.querySelector('.message');
-	messageElem.innerText = tools.sentencize('this is a test');
+	messageElem.innerText = sentencize(replaceAll('this is a test and it is a good test', 'test', 'example'));
 });
